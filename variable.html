@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS variables</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    :root{
+      --color:rgb(10, 10, 220);
+      --seccolor:lightblue;
+    }
+    :root{
+--defop:15px;
+    }
+    .box{
+      background: var(--color) ;
+      padding: 3px;
+      margin: 6px;
+      border: 2px solid rgb(20, 188, 120) ;
+    }
+    .box1{
+      background-color: var(--seccolor);
+    padding: 3px;
+      margin: 6px;
+      border: 2px solid blue ;
+      opacity: var(--defop);
+    }
+    body{
+      background-color: rgb(134, 128, 139);
+    }
+    .box h1{
+      font-size: 30px;
+      font-family: "Poppins", sans-serif;
+      color: white;
+    }
+    .box1 h1{
+      font-size: 30px;
+      font-family: "Poppins", sans-serif;
+       color: white;
+    }
+    /* @media only screen anriad (max-width:455px) */
+    @media only screen and (max-width: 355px) {
+  .box h1,
+  .box1 h1 {
+    font-size: 18px;
+    color: black;
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>i am a box. i am a web developer.</h1>
+  </div>
+  <div class="box1">
+    <h1>i am a box2.i am a web developer.</h1>
+  </div>
+</body>
+</html>
